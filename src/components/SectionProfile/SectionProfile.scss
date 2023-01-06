@@ -1,0 +1,29 @@
+
+.containerProfile{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 1rem;
+    img{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+    }
+    span{
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: greenyellow;
+    }
+    &.collapsed{
+       width: 100%;
+       img{
+        width: 3rem;
+        height: 3rem;
+       }
+       span{
+        display: none;
+       }
+    }
+}

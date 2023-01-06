@@ -1,0 +1,67 @@
+// 
+.containerbutton{
+    margin-top: 5px;
+     padding: 0.3rem 0 ;
+     border-radius: 5px;
+    //  position: relative;
+    background-color: #222 ;
+    border: none;
+    &:hover{
+        cursor:pointer;
+        // background-color:orangered;
+    }
+    div{
+        background-color: white;
+        width: 2rem;
+        height: 0.3rem;
+        border-radius: 1rem;
+        margin: 5px;
+        transition: rotate 0.5s ease-in-out;
+        rotate: 0deg;
+        // padding: 0 3px;
+    }
+    &.collapsed{
+        // background-color: rgb(245, 223, 223);
+        div{
+            margin:9px 6px ;
+        }
+        .s1{
+            // background-color: red;
+            background-color: rgb(209, 129, 129);
+            transition: rotate 0.5s ease-in-out;
+            position: absolute;
+            // animation: div1 0.3s linear;
+            rotate: 50deg;
+        }
+        .s2{
+            background-color: rgb(192, 16, 16);
+            transition: rotate 0.5s ease-in-out;
+            // animation: div2  0.3s linear;
+            rotate: 130deg;
+        }
+        // .s3{
+        //     transition: display 0.3s ease-in-out;
+        //     display: none;
+        // }
+    }
+}
+@keyframes div1{
+    from{
+        position: absolute;
+        transform :rotate(20deg) ;
+    }
+    to{
+        rotate: 50deg;
+        transform :rotate(50deg) ;
+    }
+}
+@keyframes div2{
+    from{
+        // rotate: -170deg ;
+        // background-color: red;
+    }
+    to{
+        transform: rotate(-130deg);
+        // background-color: red;
+    }
+}
